@@ -18,3 +18,10 @@ Safe Forwarding:
 Only after these checks is the packet forwarded to the AMBE3000 over the serial interface.
 
 This approach should help prevent crashes or lock-ups of the AMBE3000 due to bad internet packets.
+
+to compile just use any linux distribution
+
+debian/ubuntu
+sudo apt install build-essential
+gcc -o AMBEserver AMBEserver.c
+
