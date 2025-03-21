@@ -17,6 +17,11 @@
  *   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  *
  *   Adapted by K7VE from G4KLX dv3000d
+ *
+ *   21-03-2025
+ *   Modified by Eddie 9W2LWK to modify the code in the UDP processing function 
+ *   so that a corrupted packet (for example, one with an invalid payload length) 
+ *   is simply dropped rather than forwarded to the AMBE3000.
  */
 
 #include <stdio.h>
