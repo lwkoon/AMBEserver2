@@ -22,6 +22,8 @@ This approach should help prevent crashes or lock-ups of the AMBE3000 due to bad
 to compile just use any linux distribution
 
 debian/ubuntu
+
 sudo apt install build-essential
+
 gcc -o AMBEserver AMBEserver.c
 
