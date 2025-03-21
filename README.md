@@ -3,7 +3,8 @@ is simply dropped rather than forwarded to the AMBE3000. In the updated version 
 (after converting from network byte order) does not exceed the size of the payload buffer. If it does, we print an error message and ignore the packet.
 
 
-Explanation
+Explanation:
+
 Start Byte Check:
 The code first confirms that the packet begins with the expected start byte (0x61). If not, it logs the error and skips processing.
 
