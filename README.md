@@ -17,15 +17,4 @@ The function then computes the expected size of the packet and ensures the recei
 Safe Forwarding:
 Only after these checks is the packet forwarded to the AMBE3000 over the serial interface.
 
-This approach should help prevent crashes or lock-ups of the AMBE3000 due to bad internet packets. I hope this amendment meets your requirements.
-
-processSocket() Modifications:
-The function now checks that the packet's start byte is correct.
-
-It validates the payload length against the size of the payload buffer to prevent buffer overflows due to corrupted UDP data.
-
-It calculates the expected total packet size and verifies that it matches the received size.
-
-Only after these checks does it forward the packet to the serial port.
-
-I hope this updated code meets your needs and prevents crashes caused by bad internet packets.
+This approach should help prevent crashes or lock-ups of the AMBE3000 due to bad internet packets.
